@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="witdh=device-width, initial-scale=1.0">
+        <title>Encriptador de texto</title>
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+
+        <header class="header">
+            <img src="fotoPerfil.png" alt="Imagen de Antonieta" width="50px">
+        </header>
+
+        <main class="contenido">
+            <section class="entrada">
+                <div class="entrada__texto">
+                    <textarea placeholder="Escribe aquí..."></textarea>
+                </div>
+                <p>Ingrese solo minúsculas y sin acentos</p>
+                <p id="errorMensaje" class="error">¡Ingrese solo minúsculas y sin acentos!</p>
+                <div class="botones">
+                    <button id="myButtonEncriptar">Encriptar</button>
+                    <button id="myButtonDesencriptar">Desencriptar</button>
+                </div>
+            </section>
+            <section class="salida">
+                <div class="salida__texto">
+                    <img class="imagenSalida" src="muneco.png" alt="Imagen de un muñeco" width="100%">
+                    <p class="texto__salida">Ningún mensaje fue encontrado <br> Ingresa el texto que deseas encriptar o desencriptar</p>
+                    <button id="myButtonCopiar">Copiar</button>
+                </div>
+            </section>
+        </main>
+        
+        <!--//Elaborado por Antonieta Rodríguez Dolores
+        //25 de agosto 2024-->
+        
+        <footer class="footer">
+            <p>Desarrollado por Antonieta Rodríguez Dolores</p>
+        </footer>
+
+        <script src="app.js"></script>
+
+    </body>
+</html>

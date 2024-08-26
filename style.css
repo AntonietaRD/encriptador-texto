@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/*Elaborado por Antonieta Rodríguez Dolores
+25 de agosto 2024*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #E5E5E5;
+    color: blue;
+    box-sizing: border-box;
+}
+
+
+.contenido {
+    display: flex;
+    align-items: center;
+    padding: 5% 10%;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.entrada {
+    background-color: #E5E5E5;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 5px;
+    border-radius: 5%;
+}
+
+textarea{
+    width: 100%;
+    height: 50vh;
+    padding: 5px;
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+    color: #0A3871;
+    background-color: #E5E5E5;
+    resize: none; /* Desactiva el redimensionamiento */
+    border: none;
+    outline: none;
+}
+
+.salida {
+    width: 30%;
+    height: 65vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    border-radius: 5%;
+    text-align: center;
+    padding: 20px;
+    color: gray;
+    justify-content: space-between; /* Alinea los elementos a lo largo del eje principal */
+    box-sizing: border-box; /* Incluye el padding en el tamaño total del contenedor */
+    overflow: hidden; /* Asegura que el contenido no se desborde fuera del contenedor */
+    overflow-y: auto; /* Habilita el scroll vertical si el contenido es mayor que el contenedor */
+
+}
+
+.botones {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: auto;
+}
+
+button {
+    background-color: #D8DFE8; /* Color de fondo */
+    color: darkblue; /* Color del texto */
+    padding: 10px 20px; /* Espacio interno del botón */
+    border: 1px solid darkblue; /* Eliminar el borde */
+    border-radius: 10px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor a un puntero */
+    font-size: 16px; /* Tamaño de fuente */
+    width: 40%;
+    margin-top: auto;
+}
+
+button:hover {
+    background-color: darkblue; /* Color de fondo al pasar el mouse */
+    color: #D8DFE8;
+
+}
+ 
+.texto__salida {
+    text-align: center;
+    margin-bottom: 20px; /* Añade espacio entre el texto y el botón */
+    flex: 1; /* Permite que esta área ocupe todo el espacio disponible */
+    padding-bottom: 20px; /* Asegura que el contenido no se oculte detrás del botón */
+    box-sizing: border-box; /* Incluye el padding en el tamaño total del contenedor */
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;}
+
+#myButtonCopiar {
+    display: none; /* Oculta el botón al inicio */
+    width: 100%;
+    margin-top: auto;
+    position: sticky; /* Fija el botón en la parte inferior del contenedor */
+    bottom: 0; /* Pegado al fondo del contenedor */
+    z-index: 1; /* Asegura que el botón esté encima del contenido */
+}
+
+.error {
+    display: none;
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+
+.footer {
+    background-color: black;
+    padding: 24px;
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+
+
+@media (max-width: 1200px) {
+    .contenido{
+        flex-direction: column;
+        padding: 5%;
+        width: auto;
+    }
+    .header{
+        padding: 5%;
+    }
+    .imagenSalida{
+        display: none;
+    }
+    .salida{
+        width: 90%;
+        height: auto;
+    }
+    .entrada{
+        width: 90%;
+    }
+    
+}
